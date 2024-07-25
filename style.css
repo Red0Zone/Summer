@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+button {
+  width: 9.8125rem;
+  height: 3.125rem;
+  background-color: white;
+  color: #444444;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 73%;
+}
+
+header {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 5rem;
+  padding: 0 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.headNav a {
+  text-decoration: none;
+  color: black;
+}
+
+.headNav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.headNav {
+  display: flex;
+  width: 73%;
+  justify-content: center;
+}
+#lang {
+  border: solid 1px black;
+  height: fit-content;
+  padding: 1px;
+}
+
+.socialMedia {
+  gap: 0.6rem;
+  display: flex;
+}
+
+.socialMedia svg {
+  fill: black;
+  width: 24px;
+  height: 24px;
+}
+#searchBt {
+  background-color: red;
+  fill: white;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 41rem;
+  background: url("images/background.png") no-repeat center center;
+  background-size: cover;
+  color: white;
+  flex-direction: column;
+}
+.slider {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.125rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.slider p {
+  line-height: 1.75rem;
+  color: #ffffff;
+  width: 31.4375rem;
+}
+.slider h2 {
+  font-family: "Poppins";
+  font-size: 2.5rem;
+}
+.small {
+  font-size: 18px;
+}
+.sec2 {
+  padding-top: 80px;
+  position: relative;
+}
+#aa {
+  color: rgb(0, 127, 196);
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 400;
+}
+.slider2 p {
+  color: rgb(107, 107, 107);
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 604px;
+}
+
+.boderderDiv {
+  border: 3px solid rgb(0, 127, 196);
+  box-sizing: border-box;
+  padding: 34px 122px 40px 37px;
+  width: 763px;
+  height: fit-content;
+}
+.imageCont img {
+  position: relative;
+  z-index: -1;
+  height: 329px;
+  width: 368px;
+  top: 26px;
+  left: -60px;
+}
+.layout {
+  display: flex;
+  position: relative;
+}
+.ProductsContainer {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 15px;
+  color: #757575;
+  padding-top: 80px;
+}
+.blue {
+  color: #007fc4;
+}
+.Alist {
+  display: flex;
+  gap: 10px;
+}
+.Alist a {
+  box-sizing: border-box;
+  border: 1px solid rgb(181, 181, 181);
+  background: rgb(255, 255, 255);
+  color: gray;
+  padding: 10px;
+  height: fit-content;
+}
+.Alist a:first-child {
+  background-color: #007fc4;
+  color: #ffffff;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.center figcaption {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #757575;
+  margin-top: 20px;
+}
+.center img {
+  width: 142px;
+  height: 124px;
+}
+.proList {
+  display: flex;
+  gap: 5px;
+  padding-top: 25px;
+}
+.product--item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  font-size: 10px;
+  margin: 0%;
+}
+.product--item p {
+  width: 60%;
+}
+.product--item h2 {
+  color: #444444;
+}
+.product--item p,
+h2 {
+  padding: 0%;
+  margin: 0%;
+}
+.label {
+  display: flex;
+  width: 40%;
+  background-color: #f8c025;
+  font-size: 14px;
+  color: #ffffff;
+  align-self: flex-start;
+  padding: 6px;
+}
+.Details-class {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid rgb(156, 156, 156);
+  background: rgb(255, 255, 255);
+  color: #007fc4;
+  font-size: large;
+  padding: 10px;
+  width: 150px;
+}
