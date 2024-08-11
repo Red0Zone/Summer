@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+:root {
+  --container-width: 1091px;
+  --container-padding: 0px;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
 body {
   background-color: white;
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
+  width: 100%;
 }
 button {
   width: 9.8125rem;
@@ -13,65 +20,111 @@ button {
 }
 a {
   text-decoration: none;
+  color: black;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 73%;
+  max-width: var(--container-width);
+  padding: var(--container-padding);
+  width: 100%;
 }
 
-header {
+.header-div,
+.footer-div {
   display: flex;
-  gap: 3rem;
-  justify-content: center;
   align-items: center;
+}
+header,
+footer {
+  display: flex;
+  align-items: center;
+  height: 7.8125rem;
+}
+header {
   background-color: white;
-  height: 5rem;
-  padding: 0 2rem;
-  border-bottom: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+}
+.drop-down-header {
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  z-index: 999;
+  width: 100%;
+  background-color: white;
+}
+#logo-img {
+  margin-right: 39px;
 }
 
-.headNav a {
-  text-decoration: none;
-  color: black;
+.GG a {
+  padding: 2px;
+  /*that mean from right to left (<--) start from white to red  "the red will be shown first"*/
+  background: linear-gradient(to left, white 51%, red 49%);
+  /*the default position is left so the red color will be shown if not right*/
+  background-position: right;
+  color: #444444;
+  /*back ground width 200% so when position it to right only the white part will show*/
+  background-size: 220%;
+  border-radius: 5px;
+  /*tarnsition for the background color with the font color, think of it like sliding the background from white side
+  (the right) to red (the left side)*/
+  transition: background-position 0.3s ease-in, color 0.3s ease-in;
+  font-size: 1.0625rem;
+}
+.GG a:hover {
+  background-position: left;
+  color: white;
+}
+.GG.active a {
+  background-position: left;
+  color: white;
 }
 
 .headNav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 31px;
+  height: 100%;
 }
 .headNav {
-  display: flex;
-  width: 73%;
-  justify-content: center;
-}
-#lang {
-  border: solid 1px black;
-  height: fit-content;
-  padding: 1px;
+  margin-right: auto;
+  height: 100%;
 }
 
 .socialMedia {
-  gap: 0.6rem;
-  display: flex;
+  gap: 7px;
+  display: inline-flex;
 }
 
 .socialMedia svg {
-  fill: black;
-  width: 24px;
-  height: 24px;
+  fill: #444444;
+  max-width: 48%;
+  max-height: 48%;
 }
-#searchBt {
-  background-color: red;
+.search-icon svg {
+  fill: white;
+  border: none;
+}
+.socialMedia a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 38px;
+  background-color: #ffffff;
+  border: solid 1px #cacaca;
+}
+#nav-search--icon {
+  background-color: #ef1923;
   fill: white;
 }
 
-.container1 {
+.sec1 {
   display: flex;
-  justify-content: center;
   width: 100%;
-  height: 41rem;
   background: url("images/background.png") no-repeat center center;
   background-size: cover;
   color: white;
@@ -79,11 +132,13 @@ header {
 }
 .slider {
   font-family: "Montserrat";
-  font-weight: 400;
   font-size: 1.125rem;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 .slider p {
   line-height: 1.75rem;
@@ -94,130 +149,342 @@ header {
   font-family: "Poppins";
   font-size: 2.5rem;
 }
-.small {
-  font-size: 18px;
-}
+
 .sec2 {
   padding-top: 80px;
-  position: relative;
 }
-#aa {
+.sec2-layout {
+  display: grid;
+  grid-template-areas:
+    ". image "
+    ". image ";
+}
+.item-h {
   color: rgb(0, 127, 196);
   font-family: "Poppins";
   font-size: 30px;
-  font-weight: 400;
+  padding-left: 38px;
+  padding-bottom: 22px;
+  width: fit-content;
+  align-self: flex-start;
 }
-.slider2 p {
-  color: rgb(107, 107, 107);
-  font-family: "Poppins";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  width: 604px;
+.item-h .small {
+  font-size: 18px;
 }
 
-.boderderDiv {
-  border: 3px solid rgb(0, 127, 196);
+.item-p {
+  align-self: flex-start;
+  position: relative;
   box-sizing: border-box;
-  padding: 34px 122px 40px 37px;
-  width: 763px;
-  height: fit-content;
+  color: #6b6b6b;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+  padding: 20px 58px 43px 37px;
 }
-.imageCont img {
-  position: relative;
-  z-index: -1;
-  height: 329px;
-  width: 368px;
-  top: 26px;
-  left: -60px;
+
+.item-p ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 56px;
+  height: 100%;
+  width: 100%;
+  border: solid 3px #007fc4;
+  z-index: 99;
 }
-.layout {
-  display: flex;
-  position: relative;
+
+.item-img {
+  justify-self: flex-end;
+  grid-area: image;
+  max-width: fit-content;
 }
+.item-img img {
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+}
+
 .ProductsContainer {
   font-family: "Poppins";
-  font-weight: 700;
-  font-size: 15px;
-  color: #757575;
-  padding-top: 80px;
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-top: 112px;
+  height: 553px;
+}
+.ProductsContainer h2 {
+  font-size: 16px;
+}
+.alist-header h2 {
+  padding-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
 }
 .blue {
   color: #007fc4;
 }
-.Alist {
+.alist {
   display: flex;
   gap: 10px;
+  list-style: none;
 }
-.Alist a {
+.check {
   box-sizing: border-box;
   border: 1px solid rgb(181, 181, 181);
   background: rgb(255, 255, 255);
-  color: gray;
-  padding: 10px;
+  color: #b5b5b5;
+  padding: 10px 18px;
   height: fit-content;
+  cursor: pointer;
+  text-align: center;
+  text-wrap: nowrap;
 }
-.Alist a:first-child {
+.check.active {
   background-color: #007fc4;
   color: #ffffff;
+  transition: 0.4s ease-in;
 }
 .center {
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 162px;
 }
 .center figcaption {
   display: flex;
   justify-content: center;
   font-size: 10px;
+  font-family: "poppins";
   color: #757575;
-  margin-top: 20px;
+  margin-top: auto;
 }
+
 .center img {
-  width: 142px;
-  height: 124px;
+  max-height: 114px; /* Ensure the image height does not exceed the container height */
+  max-width: 100%;
 }
-.proList {
-  display: flex;
-  gap: 5px;
-  padding-top: 25px;
-}
-.product--item {
-  position: relative;
+
+.imgContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-height: 114px;
+}
+.proList-grid {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 24px;
+  padding-top: 46px;
+  width: 100%;
+}
+.product--item {
+  display: flex;
   flex: 1;
+  flex-direction: column;
   font-size: 10px;
-  margin: 0%;
 }
 .product--item p {
-  width: 60%;
+  width: 80%;
+  align-self: center;
+  text-align: center;
+  margin-bottom: auto;
 }
 .product--item h2 {
+  align-self: center;
   color: #444444;
 }
-.product--item p,
-h2 {
-  padding: 0%;
-  margin: 0%;
-}
+
 .label {
   display: flex;
-  width: 40%;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #f8c025;
-  font-size: 14px;
   color: #ffffff;
   align-self: flex-start;
-  padding: 6px;
+  padding: 3px 0px 1px 5px;
+  font-size: 8px;
+  border-radius: 0px 2px 0px 0px;
+  margin-bottom: 6px;
+  width: 52px;
+  position: relative;
+}
+.label-span {
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 9px solid white;
+  top: -11%;
 }
 .Details-class {
   display: flex;
   box-sizing: border-box;
-  border: 1px solid rgb(156, 156, 156);
+  border: 2px solid rgb(156, 156, 156);
   background: rgb(255, 255, 255);
   color: #007fc4;
   font-size: large;
-  padding: 10px;
-  width: 150px;
+  padding: 5px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.x {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.x.active {
+  background-color: rgb(198, 190, 190);
+  color: white;
+  border-radius: 5px;
+}
+.product-item-dialog {
+  margin: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  z-index: -10;
+  font-size: 30px;
+  color: red;
+  text-align: center;
+  background-color: rgba(236, 222, 222, 0.5); /* Black with 50% opacity */
+}
+.wrapper img {
+  max-width: 200px;
+}
+.wrapper .textDiv {
+  margin: 20px;
+}
+.close {
+  border: solid 1px black;
+  font: 30px "poppins";
+  background-color: #007fc4;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.sec3 {
+  width: 100%;
+  height: 443px;
+  background: rgb(243, 243, 243);
+}
+.sec3-cont {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sec3-cont h2 {
+  font-family: "poppins";
+  font-size: 30px;
+  line-height: 45px;
+  color: #757575;
+}
+.sec3-cont-img {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 22.5px;
+  margin-top: 25px;
+}
+.sec3-cont-img figure {
+  width: 100%;
+  flex: 1;
+}
+.sec3-cont-img figure img {
+  max-width: 250px;
+}
+.sec3-cont-img figcaption {
+  color: #757575;
+  font-size: 12px;
+}
+.sec3-cont-img figcaption svg {
+  display: inline;
+}
+.sec3-cont-img-text {
+  display: block;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: bold;
+}
+.tap {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: center;
+}
+.tap-img-cont img {
+  width: 265px;
+  height: 191px;
+}
+.tap-img-cont {
+  position: relative;
+}
+.tap-img-cont:hover .caption {
+  display: flex;
+  flex-direction: column;
+}
+.caption {
+  color: #ffffff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(99, 190, 70, 0.81);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-family: "Poppins";
+
+  font-size: 18px;
+  line-height: 23px;
+}
+.caption p {
+  width: 70%;
+  padding-top: 53px;
+  text-align: center;
+}
+.caption svg {
+  fill: white;
+}
+.sec4 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.sec4-img-cont {
+  display: flex;
+  justify-content: center;
+}
+.sec4-img-cont img {
+  flex: 1;
+  width: 100%;
+}
+.img-div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.gg {
+  font-size: 20px;
+  padding: 5px;
+}
+@media only screen and (max-width: 1110px) {
+  /* For mobile phones: */
+  :root {
+    --contauner-width: 100%;
+    --container-padding: 15px;
+    font-size: 13px;
+  }
 }

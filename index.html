@@ -4,208 +4,536 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b24a8e0849.js"
+      crossorigin="anonymous"
+    ></script>
     <title>One Package</title>
   </head>
   <body>
-    <header class="container">
-      <a href="#"><img src="images/logo.png" width="216px" /></a>
-      <nav class="headNav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-      </nav>
+    <header>
+      <div class="drop-down-header">
+        <div class="container">
+          <div class="header-div">
+            <div>
+              <a href="#" id="logo-img">
+                <img src="images/logo.png" width="142px"
+              /></a>
+            </div>
 
-      <div class="socialMedia">
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="22"
-            height="20"
-          >
-            <path
-              d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .733.592 1.324 1.325 1.324h11.495v-9.294h-3.123v-3.622h3.123v-2.672c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.098 2.796.143v3.241l-1.918.001c-1.504 0-1.795.714-1.795 1.763v2.311h3.588l-.467 3.622h-3.121v9.294h6.116c.733 0 1.325-.591 1.325-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z"
-            />
-          </svg>
-        </a>
-        <a href="#">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-            <path
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.896-.957-2.173-1.555-3.591-1.555-2.717 0-4.917 2.201-4.917 4.917 0 .386.044.763.127 1.124-4.083-.205-7.699-2.159-10.124-5.125-.423.724-.666 1.562-.666 2.457 0 1.694.862 3.187 2.172 4.065-.8-.025-1.553-.245-2.209-.611v.061c0 2.366 1.684 4.342 3.918 4.79-.41.111-.841.171-1.287.171-.314 0-.615-.03-.916-.086.617 1.926 2.416 3.33 4.543 3.367-1.669 1.307-3.776 2.086-6.061 2.086-.393 0-.779-.023-1.158-.068 2.162 1.389 4.727 2.201 7.484 2.201 8.978 0 13.888-7.438 13.888-13.888 0-.211-.004-.422-.014-.632.952-.686 1.779-1.54 2.438-2.515z"
-            /></svg
-        ></a>
-        <a href="#"
-          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path
-              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-            /></svg
-        ></a>
-        <a href="#"
-          ><svg
-            id="lang"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 22 22"
-          >
-            <text
-              x="0"
-              y="16"
-              font-family="Arial, sans-serif"
-              font-size="15"
-              fill="black"
-            >
-              AR
-            </text>
-          </svg>
-        </a>
-        <a href="#"
-          ><svg
-            id="searchBt"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 26 26"
-          >
-            <path
-              d="M21.707 20.293l-5.397-5.397A8.918 8.918 0 0 0 19 10c0-4.963-4.037-9-9-9S1 5.037 1 10s4.037 9 9 9c2.172 0 4.175-.75 5.76-2.09l5.397 5.397a1 1 0 0 0 1.414-1.414zM3 10c0-3.866 3.134-7 7-7s7 3.134 7 7-3.134 7-7 7-7-3.134-7-7z"
-            />
-          </svg>
-        </a>
-      </div>
-    </header>
-    <section class="container1">
-      <div class="slider container">
-        <h2>Lorem ipsum is simple text</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-        </p>
-        <button>Read More</button>
-      </div>
-    </section>
-    <section class="sec2 container">
-      <div class="layout">
-        <div>
-          <h2 id="aa"><span class="small">About </span>One Package</h2>
+            <nav class="headNav">
+              <ul>
+                <li class="GG"><a href="#">Home</a></li>
+                <li class="GG"><a href="#">About us</a></li>
+                <li class="GG"><a href="#">Products</a></li>
+                <li class="GG"><a href="#">News</a></li>
+                <li class="GG"><a href="#">Gallery</a></li>
+                <li class="GG"><a href="#">Contact us</a></li>
+              </ul>
+            </nav>
 
-          <div class="boderderDiv">
-            <div class="slider2">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the.
-              </p>
+            <div class="socialMedia">
+              <a href="#">
+                <svg
+                  width="8.457520"
+                  height="16.914658"
+                  viewBox="0 0 8.45752 16.9147"
+                  fill="none"
+                >
+                  <g style="mix-blend-mode: normal">
+                    <path
+                      id="Shape"
+                      d="M5.28 5.81L5.28 3.7C5.28 3.11 5.75 2.64 6.34 2.64L7.4 2.64L7.4 0L5.28 0C3.53 0 2.11 1.41 2.11 3.17L2.11 5.81L0 5.81L0 8.45L2.11 8.45L2.11 16.91L5.28 16.91L5.28 8.45L7.4 8.45L8.45 5.81L5.28 5.81Z"
+                      fill="#444444"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="16.654297"
+                  height="13.531723"
+                  viewBox="0 0 16.6543 13.5317"
+                  fill="none"
+                >
+                  <g style="mix-blend-mode: normal">
+                    <path
+                      id="Shape"
+                      d="M16.65 1.6C16.03 1.87 15.37 2.05 14.68 2.14C15.39 1.71 15.93 1.05 16.18 0.25C15.52 0.64 14.8 0.92 14.02 1.08C13.39 0.41 12.5 0 11.53 0C9.63 0 8.11 1.53 8.11 3.41C8.11 3.68 8.14 3.94 8.19 4.19C5.35 4.05 2.84 2.69 1.15 0.62C0.86 1.13 0.69 1.71 0.69 2.34C0.69 3.53 1.3 4.57 2.2 5.18C1.66 5.17 1.12 5.01 0.66 4.76C0.66 6.42 1.84 7.84 3.4 8.15C3.12 8.23 2.82 8.26 2.5 8.26C2.28 8.26 2.06 8.25 1.85 8.21C2.3 9.56 3.55 10.55 5.05 10.59C3.88 11.49 2.41 12.04 0.81 12.04C0.53 12.04 0.26 12.03 0 11.99C1.51 12.97 3.3 13.53 5.23 13.53C11.52 13.53 14.95 8.32 14.95 3.81C14.95 3.66 14.95 3.51 14.94 3.37C15.62 2.89 16.19 2.29 16.65 1.6Z"
+                      fill="#444444"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#"
+                ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="19.324219"
+                  height="13.224854"
+                  viewBox="0 0 19.3242 13.2249"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g style="mix-blend-mode: normal">
+                    <path
+                      id="Ar"
+                      d="M3.2 10.52L8.73 10.52L9.68 13.22L11.97 13.22L7.24 0L4.73 0L-0.01 13.22L2.26 13.22L3.2 10.52ZM16.87 3.44Q16.47 3.79 16.18 4.27L16.18 2.75L14.02 2.75L14.02 13.22L16.18 13.22L16.18 7.71Q16.18 6.11 16.84 5.47Q16.85 5.46 16.86 5.45Q17.52 4.82 18.77 4.82L19.32 4.82L19.32 2.58Q18.24 2.58 17.45 3.03Q17.14 3.21 16.87 3.44ZM5.98 2.62L8.13 8.75L3.82 8.75L5.98 2.62Z"
+                      fill="#444444"
+                      fill-opacity="1.000000"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="search-icon" id="nav-search--icon">
+                <svg
+                  class="fa-beat"
+                  width="16.608887"
+                  height="17.202988"
+                  viewBox="0 0 16.6089 17.203"
+                  fill="none"
+                >
+                  <g style="mix-blend-mode: normal">
+                    <path
+                      id="search"
+                      d="M16.35 15.66L12.26 11.41C13.31 10.15 13.89 8.58 13.89 6.94C13.89 3.11 10.77 0 6.94 0C3.11 0 0 3.11 0 6.94C0 10.77 3.11 13.89 6.94 13.89C8.38 13.89 9.75 13.45 10.92 12.63L15.05 16.92C15.22 17.1 15.45 17.2 15.7 17.2C15.93 17.2 16.16 17.11 16.33 16.95C16.69 16.6 16.7 16.02 16.35 15.66ZM6.94 1.81C9.77 1.81 12.07 4.11 12.07 6.94C12.07 9.77 9.77 12.07 6.94 12.07C4.11 12.07 1.81 9.77 1.81 6.94C1.81 4.11 4.11 1.81 6.94 1.81Z"
+                      fill="#FFFFFF"
+                      fill-opacity="1.000000"
+                      fill-rule="nonzero"
+                    />
+                    <path
+                      id="search"
+                      d="M12.26 11.41C13.31 10.15 13.89 8.58 13.89 6.94C13.89 3.11 10.77 0 6.94 0C3.11 0 0 3.11 0 6.94C0 10.77 3.11 13.89 6.94 13.89C8.38 13.89 9.75 13.45 10.92 12.63L15.05 16.92C15.22 17.1 15.45 17.2 15.7 17.2C15.93 17.2 16.16 17.11 16.33 16.95C16.69 16.6 16.7 16.02 16.35 15.66L12.26 11.41ZM12.07 6.94C12.07 9.77 9.77 12.07 6.94 12.07C4.11 12.07 1.81 9.77 1.81 6.94C1.81 4.11 4.11 1.81 6.94 1.81C9.77 1.81 12.07 4.11 12.07 6.94Z"
+                      stroke="#707070"
+                      stroke-opacity="0"
+                      stroke-width="1.000000"
+                    />
+                  </g>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
-        <div class="imageCont"><img src="images/2.png" /></div>
       </div>
-      <div class="ProductsContainer">
-        <h2><span class="blue">Our</span> Products</h2>
-        <div class="Alist">
-          <a href="#">All</a>
-          <a href="#">Cleaning</a>
-          <a href="#">Plastic</a>
-          <a href="#">Machines</a>
-          <a href="#">Food Stuff</a>
-          <a href="#">Paper</a>
-          <a href="#">Cleaning Materials</a>
-        </div>
-        <div class="proList">
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product1.png" />
-              <figcaption>Category name</figcaption>
-            </figure>
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product2.png" />
-
-              <figcaption>Category name</figcaption>
-            </figure>
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product3.png" />
-              <figcaption>Category name</figcaption>
-            </figure>
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product4.png" />
-              <figcaption>Category name</figcaption>
-            </figure>
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product5.png" />
-              <figcaption>Category name</figcaption>
-            </figure>
-
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
-          <div class="product--item">
-            <div class="label">best seller</div>
-            <figure class="center">
-              <img src="images/product6.png" />
-              <figcaption>Category name</figcaption>
-            </figure>
-            <h2>product name</h2>
-            <p>
-              lorem lpsum is simply text of the printing and typesetting
-              industry
-            </p>
-            <div class="Details-class"><a href="#">Details</a></div>
-          </div>
+    </header>
+    <section class="sec1">
+      <div class="container">
+        <div class="slider">
+          <h2>Lorem ipsum is simple text</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and
+          </p>
+          <button>Read More</button>
         </div>
       </div>
     </section>
+    <section class="sec2">
+      <div class="container">
+        <div class="sec2-layout">
+          <h2 class="item-h"><span class="small">About </span>One Package</h2>
+          <div class="item-p">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the.
+            </p>
+          </div>
+          <div class="item-img"><img src="images/2.png" width="390px" /></div>
+        </div>
+        <div class="ProductsContainer">
+          <div class="alist-header">
+            <h2><span class="blue">Our</span> Products</h2>
+          </div>
+          <ul class="alist">
+            <li class="check active">All</li>
+            <li class="check">Cleaning</li>
+            <li class="check">Plastic</li>
+            <li class="check">Machines</li>
+            <li class="check">Food Stuff</li>
+            <li class="check">Paper</li>
+            <li class="check">Cleaning Materials</li>
+          </ul>
+          <div class="proList-grid">
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  <div>Best Seller</div>
+                  <span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product1.png" />
+                </div>
+                <figcaption>Category name</figcaption>
+              </figure>
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  Best Seller <span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product2.png" />
+                </div>
+
+                <figcaption>Category name</figcaption>
+              </figure>
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  Best Seller <span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product3.png" />
+                </div>
+                <figcaption>Category name</figcaption>
+              </figure>
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  Best Seller <span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product4.png" />
+                </div>
+                <figcaption>Category name</figcaption>
+              </figure>
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  Best Seller<span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product5.png" />
+                </div>
+                <figcaption>Category name</figcaption>
+              </figure>
+
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+            <div class="product--item">
+              <figure class="center">
+                <div class="label">
+                  best seller<span class="label-span"></span>
+                </div>
+                <div class="product-item-img-div">
+                  <img src="images/product6.png" />
+                </div>
+                <figcaption>Category name</figcaption>
+              </figure>
+              <h2>Product name</h2>
+              <p>
+                lorem lpsum is simply text of the printing and typesetting
+                industry
+              </p>
+              <a class="Details-class x"> Details</a>
+            </div>
+          </div>
+          <dialog class="product-item-dialog">
+            <div class="wrapper">
+              <div class="img-container">
+                <img src="" alt="" />
+              </div>
+              <div class="textDiv">Text Here</div>
+              <div class="button">
+                <a class="close">Add To Cart</a>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+    <section class="sec3">
+      <div class="container sec3-cont">
+        <h2><span class="blue">Latest</span> News</h2>
+        <div class="sec3-cont-img">
+          <figure>
+            <img src="images/sec3/1.jpeg" />
+            <figcaption>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="9"
+                width="9"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+              25 may 2021
+              <span class="sec3-cont-img-text">News title here</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/sec3/2.jpeg" />
+            <figcaption>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="10"
+                width="10"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+              25 may 2021
+              <span class="sec3-cont-img-text">News title here</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/sec3/3.jpeg" />
+            <figcaption>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="10"
+                width="10"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+              25 may 2021
+              <span class="sec3-cont-img-text">News title here</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="images/sec3/4.jpeg" />
+            <figcaption>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="10"
+                width="10"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+              25 may 2021
+              <span class="sec3-cont-img-text">News title here</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <div class="tap">
+      <div class="tap-img-cont">
+        <img src="images/tapImg/1.jpeg" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tap-img-cont">
+        <img src="images/tapImg/2.png" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tap-img-cont">
+        <img src="images/tapImg/3.jpeg" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tap-img-cont">
+        <img src="images/tapImg/4.jpeg" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tap-img-cont">
+        <img src="images/tapImg/5.jpeg" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="tap-img-cont">
+        <img src="images/tapImg/6.jpeg" alt="random Image" />
+        <div class="caption">
+          <p>Lorem Ipsum is simply dummy text</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            width="32"
+            viewBox="0 0 460 512"
+          >
+            <path
+              d="M220.6 130.3l-67.2 28.2V43.2L98.7 233.5l54.7-24.2v130.3l67.2-209.3zm-83.2-96.7l-1.3 4.7-15.2 52.9C80.6 106.7 52 145.8 52 191.5c0 52.3 34.3 95.9 83.4 105.5v53.6C57.5 340.1 0 272.4 0 191.6c0-80.5 59.8-147.2 137.4-158zm311.4 447.2c-11.2 11.2-23.1 12.3-28.6 10.5-5.4-1.8-27.1-19.9-60.4-44.4-33.3-24.6-33.6-35.7-43-56.7-9.4-20.9-30.4-42.6-57.5-52.4l-9.7-14.7c-24.7 16.9-53 26.9-81.3 28.7l2.1-6.6 15.9-49.5c46.5-11.9 80.9-54 80.9-104.2 0-54.5-38.4-102.1-96-107.1V32.3C254.4 37.4 320 106.8 320 191.6c0 33.6-11.2 64.7-29 90.4l14.6 9.6c9.8 27.1 31.5 48 52.4 57.4s32.2 9.7 56.8 43c24.6 33.2 42.7 54.9 44.5 60.3s.7 17.3-10.5 28.5zm-9.9-17.9c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <section class="container sec4">
+      <div class="sec4-img-cont">
+        <div class="sec4-img-div">
+          <img src="images/company/1.png" alt="Random company image" />
+        </div>
+        <div class="sec4-img-div">
+          <img src="images/company/2.png" alt="Random company image" />
+        </div>
+        <div class="sec4-img-div">
+          <img src="images/company/3.png" alt="Random company image" />
+        </div>
+        <div class="sec4-img-div">
+          <img src="images/company/4.png" alt="Random company image" />
+        </div>
+        <div class="sec4-img-div">
+          <img src="images/company/5.png" alt="Random company image" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-div">
+          <a href="#" id="logo-img"
+            ><div><img src="images/logo.png" width="142px" /></div
+          ></a>
+
+          <nav class="headNav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </nav>
+
+          <div class="socialMedia">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                />
+              </svg>
+            </a>
+            <a href="#"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
