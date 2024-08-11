@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const product_popUp = document.querySelector(".product-item-dialog");
   const closeBtn = document.querySelector(".close");
   const wrapper = document.querySelector(".wrapper");
+  const replicate = document.querySelectorAll(".proList-grid > div");
+  const proGrid = document.querySelector(".proList-grid");
+
+  replicate.forEach((div) => {
+    const copy = div.cloneNode(true);
+    proGrid.appendChild(copy);
+  });
 
   const headerHeight = headerDiv.clientHeight / 2;
   window.onscroll = () => {
