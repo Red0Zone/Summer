@@ -5,13 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const product_popUp = document.querySelector(".product-item-dialog");
   const closeBtn = document.querySelector(".close");
   const wrapper = document.querySelector(".wrapper");
-  const replicate = document.querySelectorAll(".proList-grid > div");
+  const replicate = document.querySelector(".product--item");
   const proGrid = document.querySelector(".proList-grid");
+  const dots = document.querySelectorAll(".dots>div");
+  const sec1_Slider = document.querySelector(".sec1");
 
-  replicate.forEach((div) => {
-    const copy = div.cloneNode(true);
+  const imageFolder = "images/products/";
+  for (let i = 2; i <= 6; i++) {
+    let copy = replicate.cloneNode(true);
+    let imgSrc = copy.querySelector(".product-item-img-div>img");
+    imgSrc.src = imageFolder + `product${i}.png`;
+    console.log(imgSrc);
     proGrid.appendChild(copy);
-  });
+  }
 
   const headerHeight = headerDiv.clientHeight / 2;
   window.onscroll = () => {
@@ -97,4 +103,24 @@ document.addEventListener("DOMContentLoaded", () => {
       GG.classList.remove("active");
     });
   };
+
+  let dotsId = 1;
+  setTime();
+  function setTime() {
+    id = setInterval(moveInTime, 3500);
+  }
+  function moveInTime() {
+    dots.forEach((dot) => {
+      dot.classList.remove("active");
+    });
+    dotsId = dotsId % 4;
+    sec1_Slider.style.backgroundImage = `url("images/background/background${
+      dotsId + 1
+    }.png")`;
+
+    dots[dotsId].classList.add("active");
+    dotsId++;
+    clearInterval(id);
+    setTime();
+  }
 });

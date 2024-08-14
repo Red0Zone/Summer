@@ -1,6 +1,7 @@
 :root {
   --container-width: 1091px;
   --container-padding: 0px;
+  --max-width: 1444px;
 }
 * {
   margin: 0%;
@@ -13,10 +14,10 @@ body {
   width: 100%;
 }
 button {
-  width: 9.8125rem;
-  height: 3.125rem;
+  border: none;
   background-color: white;
   color: #444444;
+  padding: 15px 35px 12px 36px;
 }
 a {
   text-decoration: none;
@@ -40,11 +41,10 @@ footer {
   display: flex;
   align-items: center;
   height: 7.8125rem;
-}
-header {
   background-color: white;
-  width: 100%;
-  position: relative;
+}
+footer {
+  background-color: #f6f6f6;
 }
 .drop-down-header {
   position: sticky;
@@ -55,13 +55,13 @@ header {
   background-color: white;
 }
 #logo-img {
-  margin-right: 39px;
+  margin-right: 2.4375rem;
 }
 
 .GG a {
   padding: 2px;
   /*that mean from right to left (<--) start from white to red  "the red will be shown first"*/
-  background: linear-gradient(to left, white 51%, red 49%);
+  background: linear-gradient(to left, white 51%, rgb(250, 56, 56) 49%);
   /*the default position is left so the red color will be shown if not right*/
   background-position: right;
   color: #444444;
@@ -86,7 +86,7 @@ header {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 31px;
+  gap: 1.9375rem;
   height: 100%;
 }
 .headNav {
@@ -95,7 +95,7 @@ header {
 }
 
 .socialMedia {
-  gap: 7px;
+  gap: 0.4375rem;
   display: inline-flex;
 }
 
@@ -125,10 +125,12 @@ header {
 .sec1 {
   display: flex;
   width: 100%;
-  background: url("images/background.png") no-repeat center center;
+  background: url("images/background/background1.png") no-repeat center center;
   background-size: cover;
   color: white;
   flex-direction: column;
+  background-position: left;
+  transition: background-image 0.5s ease-in-out;
 }
 .slider {
   font-family: "Montserrat";
@@ -137,8 +139,8 @@ header {
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  padding-top: 167px;
+  padding-bottom: 63px;
 }
 .slider p {
   line-height: 1.75rem;
@@ -149,24 +151,49 @@ header {
   font-family: "Poppins";
   font-size: 2.5rem;
 }
+[class^="dots"] {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.dots {
+  margin-top: 127px;
+}
+[class^="dots"] div {
+  padding: 4.1px;
+  background-color: transparent;
+  border: solid 1px white;
+}
+
+.dots-2 {
+  margin-top: 28px;
+}
+.dots-2 div {
+  border: solid 1px #6b6b6b;
+}
+.dots div.active {
+  background-color: white;
+}
+.dots-2 div.active {
+  background-color: #6b6b6b;
+}
 
 .sec2 {
   padding-top: 80px;
 }
 .sec2-layout {
   display: grid;
-  grid-template-areas:
-    ". image "
-    ". image ";
+  grid-template-areas: ". image";
 }
+
 .item-h {
   color: rgb(0, 127, 196);
   font-family: "Poppins";
   font-size: 30px;
   padding-left: 38px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   width: fit-content;
-  align-self: flex-start;
 }
 .item-h .small {
   font-size: 18px;
@@ -181,7 +208,7 @@ header {
   font-size: 14px;
   line-height: 30px;
   font-style: normal;
-  padding: 20px 58px 43px 37px;
+  padding: 34px 57px 40px 37px;
 }
 
 .item-p ::after {
@@ -192,7 +219,7 @@ header {
   padding-left: 56px;
   height: 100%;
   width: 100%;
-  border: solid 3px #007fc4;
+  border: solid 4px #007fc4;
   z-index: 99;
 }
 
@@ -291,17 +318,15 @@ header {
 }
 
 .label {
-  display: flex;
-  justify-content: flex-start;
+  display: block;
   align-items: center;
   background-color: #f8c025;
   color: #ffffff;
   align-self: flex-start;
-  padding: 3px 0px 1px 5px;
+  padding: 3px 14px 1px 5px;
   font-size: 8px;
   border-radius: 0px 2px 0px 0px;
   margin-bottom: 6px;
-  width: 52px;
   position: relative;
 }
 .label-span {
@@ -315,7 +340,6 @@ header {
 }
 .Details-class {
   display: flex;
-  box-sizing: border-box;
   border: 2px solid rgb(156, 156, 156);
   background: rgb(255, 255, 255);
   color: #007fc4;
@@ -371,24 +395,24 @@ header {
 
 .sec3 {
   width: 100%;
-  height: 443px;
   background: rgb(243, 243, 243);
 }
 .sec3-cont {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 4.5rem;
+  padding-bottom: 5.1875rem;
 }
 .sec3-cont h2 {
   font-family: "poppins";
-  font-size: 30px;
-  line-height: 45px;
+  font-size: 1.875rem;
+  font-weight: bold;
+  line-height: 2.8125rem;
   color: #757575;
 }
 .sec3-cont-img {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 22.5px;
-  margin-top: 25px;
+  gap: 1.40625rem;
+  margin-top: 1.5625rem;
 }
 .sec3-cont-img figure {
   width: 100%;
@@ -398,11 +422,13 @@ header {
   max-width: 250px;
 }
 .sec3-cont-img figcaption {
-  color: #757575;
+  color: #6b6b6b;
   font-size: 12px;
+  font-family: "Roboto";
 }
 .sec3-cont-img figcaption svg {
   display: inline;
+  color: #6b6b6b;
 }
 .sec3-cont-img-text {
   display: block;
@@ -413,15 +439,16 @@ header {
 .tap {
   display: flex;
   width: 100%;
-  overflow-x: scroll;
   overflow-y: hidden;
-  justify-content: center;
+  max-width: var(--max-width);
+  margin: auto;
 }
 .tap-img-cont img {
-  width: 265px;
-  height: 191px;
+  max-width: 100%;
+  height: auto;
 }
 .tap-img-cont {
+  flex: 1;
   position: relative;
 }
 .tap-img-cont:hover .caption {
@@ -441,7 +468,6 @@ header {
   left: 0;
   z-index: 1;
   font-family: "Poppins";
-
   font-size: 18px;
   line-height: 23px;
 }
@@ -458,26 +484,24 @@ header {
   padding-bottom: 80px;
 }
 .sec4-img-cont {
+  opacity: 0.56;
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
+  mix-blend-mode: luminosity;
 }
 .sec4-img-cont img {
-  flex: 1;
-  width: 100%;
+  max-width: 100%;
 }
-.img-div {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
+
 .gg {
   font-size: 20px;
   padding: 5px;
 }
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1095px) {
   /* For mobile phones: */
   :root {
-    --contauner-width: 100%;
-    --container-padding: 15px;
+    --container-width: 100%;
+    --container-padding: 20px;
+    font-size: 14px;
   }
 }
