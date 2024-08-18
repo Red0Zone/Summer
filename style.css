@@ -12,6 +12,7 @@ body {
   background-color: white;
   font-family: Arial, sans-serif;
   width: 100%;
+  min-height: 100vh;
 }
 button {
   border: none;
@@ -27,7 +28,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: var(--container-width);
-  padding: var(--container-padding);
+  padding: 0px var(--container-padding);
   width: 100%;
 }
 
@@ -87,11 +88,12 @@ footer {
   display: flex;
   align-items: center;
   gap: 1.9375rem;
-  height: 100%;
 }
 .headNav {
-  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
   height: 100%;
+  width: 100%;
 }
 
 .socialMedia {
@@ -126,7 +128,7 @@ footer {
   display: flex;
   width: 100%;
   background: url("images/background/background1.png") no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
   color: white;
   flex-direction: column;
   background-position: left;
@@ -139,13 +141,14 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 25px;
-  padding-top: 167px;
+  padding-top: 15%;
   padding-bottom: 63px;
 }
 .slider p {
   line-height: 1.75rem;
   color: #ffffff;
-  width: 31.4375rem;
+  width: 32rem;
+  max-width: 100%;
 }
 .slider h2 {
   font-family: "Poppins";
@@ -256,6 +259,7 @@ footer {
   display: flex;
   gap: 10px;
   list-style: none;
+  flex-wrap: wrap;
 }
 .check {
   box-sizing: border-box;
@@ -275,7 +279,7 @@ footer {
 }
 .proList-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(161px, 1fr));
   gap: 24px;
   padding-top: 46px;
   width: 100%;
@@ -410,7 +414,7 @@ footer {
 }
 .sec3-cont-img {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.40625rem;
   margin-top: 1.5625rem;
 }
@@ -419,7 +423,7 @@ footer {
   flex: 1;
 }
 .sec3-cont-img figure img {
-  max-width: 250px;
+  max-width: 100%;
 }
 .sec3-cont-img figcaption {
   color: #6b6b6b;
@@ -437,19 +441,21 @@ footer {
   font-weight: bold;
 }
 .tap {
-  display: flex;
+  display: grid;
   width: 100%;
   overflow-y: hidden;
   max-width: var(--max-width);
   margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  justify-content: center;
 }
 .tap-img-cont img {
   max-width: 100%;
   height: auto;
 }
 .tap-img-cont {
-  flex: 1;
   position: relative;
+  max-width: 300px;
 }
 .tap-img-cont:hover .caption {
   display: flex;
@@ -485,8 +491,8 @@ footer {
 }
 .sec4-img-cont {
   opacity: 0.56;
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   mix-blend-mode: luminosity;
 }
 .sec4-img-cont img {
@@ -497,11 +503,33 @@ footer {
   font-size: 20px;
   padding: 5px;
 }
-@media only screen and (max-width: 1095px) {
+@media only screen and (max-width: 1150px) {
   /* For mobile phones: */
   :root {
-    --container-width: 100%;
-    --container-padding: 20px;
-    font-size: 14px;
+    --container-width: 90%;
+  }
+  .headNav {
+    display: none;
+  }
+  .socialMedia {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sec2-layout {
+    grid-template-areas: "image";
+    gap: 20px;
+  }
+  .item-img img {
+    border-radius: 15px;
+  }
+  .item-p ::after {
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .socialMedia a {
+    width: 25px;
+    height: 25px;
   }
 }
