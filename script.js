@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const proGrid = document.querySelector(".proList-grid");
   const dots = document.querySelectorAll(".dots>div");
   const sec1_Slider = document.querySelector(".sec1");
+  const menuBar = document.querySelector(".nav-bar-icon");
+  const navBar = document.querySelector(".headNav");
+  const closeMenu = document.querySelector(".nav-bar-close-icon");
+
+  menuBar.addEventListener("click", (e) => {
+    navBar.classList.add("active");
+  });
+  closeMenu.addEventListener("click", (e) => {
+    navBar.classList.remove("active");
+  });
 
   const imageFolder = "images/products/";
   for (let i = 2; i <= 6; i++) {
