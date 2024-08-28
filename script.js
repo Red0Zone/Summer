@@ -9,15 +9,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const proGrid = document.querySelector(".proList-grid");
   const dots = document.querySelectorAll(".dots>div");
   const sec1_Slider = document.querySelector(".sec1");
-  const menuBar = document.querySelector(".nav-bar-icon");
+  const menuBar = document.getElementById("lottie-nav-bar");
   const navBar = document.querySelector(".headNav");
   const closeMenu = document.querySelector(".nav-bar-close-icon");
 
+  let active = false;
   menuBar.addEventListener("click", (e) => {
-    navBar.classList.add("active");
-  });
-  closeMenu.addEventListener("click", (e) => {
-    navBar.classList.remove("active");
+    if (active) {
+      navBar.classList.remove("active");
+      active = false;
+      menuBar.getLottie().playSegments([70, 140], true);
+    } else {
+      navBar.classList.add("active");
+      active = true;
+      menuBar.getLottie().playSegments([0, 70], true);
+    }
   });
 
   const imageFolder = "images/products/";

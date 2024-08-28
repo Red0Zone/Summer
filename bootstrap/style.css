@@ -1,0 +1,8 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.myDiv {
+  border: solid 1px gray;
+  max-width: fit-content;
+}

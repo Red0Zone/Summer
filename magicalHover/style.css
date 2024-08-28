@@ -1,0 +1,60 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+  --font-color: white;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: flex;
+  color: --font-color;
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--bg-color);
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 1px red;
+  max-width: 1000px;
+  width: calc(100%-20px);
+  padding: 20px;
+}
+.card {
+  flex: 1;
+  min-width: 30%;
+  color: var(--font-color);
+  border: solid 1px white;
+}
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.text-card-container {
+  flex: 1;
+  padding: 15px;
+  font-weight: 800;
+  width: 70%;
+  max-width: 100%;
+  min-width: fit-content;
+}
+.image-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 5px 15px;
+  flex: 1;
+}
+.contain {
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 100px;
+}
